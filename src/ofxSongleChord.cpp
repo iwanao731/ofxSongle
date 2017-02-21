@@ -8,6 +8,7 @@
 
 #include "ofxSongleChord.hpp"
 
+using namespace songle;
 
 void ofxSongleChord::load(const string &url)
 {
@@ -57,7 +58,7 @@ int ofxSongleChord::getNumChords()
     return mChords.size();
 }
 
-Chord &ofxSongleChord::getChord(int index)
+songle::Chord &ofxSongleChord::getChord(int index)
 {
     return mChords[index];
 }

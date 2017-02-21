@@ -12,41 +12,44 @@
 #include <ofMain.h>
 #include "ofxJSON.h"
 
-class Chord;
-
-class ofxSongleChord
+namespace songle
 {
-public:
-    ofxSongleChord(){}
-    ~ofxSongleChord(){}
-    
-    void load(const string &url);
-    string getCurrentChord(float currentFloatTime);
-    int getNumChords();
-    Chord &getChord(int index);
-    
-private:
-    vector<Chord> mChords;
-};
+	class Chord;
 
-class Chord
-{
-public:
-    void setIndex(int index);
-    void setStart(int start);
-    void setDuration(int duration);
-    void setName(const string &name);
-    
-    int getIndex();
-    int getStart();
-    int getDuration();
-    string &getName();
-    
-private:
-    int mIndex;
-    int mStart;
-    int mDuration;
-    string mName;
-};
+	class ofxSongleChord
+	{
+	public:
+		ofxSongleChord() {}
+		~ofxSongleChord() {}
 
+		void load(const string &url);
+		string getCurrentChord(float currentFloatTime);
+		int getNumChords();
+		Chord &getChord(int index);
+
+	private:
+		vector<Chord> mChords;
+	};
+
+	class Chord
+	{
+	public:
+		void setIndex(int index);
+		void setStart(int start);
+		void setDuration(int duration);
+		void setName(const string &name);
+
+		int getIndex();
+		int getStart();
+		int getDuration();
+		string &getName();
+
+	private:
+		int mIndex;
+		int mStart;
+		int mDuration;
+		string mName;
+	};
+
+}
 #endif /* ofxSongleChord_hpp */

@@ -8,6 +8,8 @@
 
 #include "ofxSongleBasic.hpp"
 
+using namespace songle;
+
 void ofxSongleBasic::load(const string &url)
 {
     std::string basic_url = "https://widget.songle.jp/api/v1/song.json?url=" + url;
@@ -61,7 +63,7 @@ string &ofxSongleBasic::getTitle()
     return mTitle;
 }
 
-Artist &ofxSongleBasic::getArtist()
+songle::Artist &ofxSongleBasic::getArtist()
 {
     return mArtist;
 }

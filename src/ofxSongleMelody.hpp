@@ -12,37 +12,40 @@
 #include <ofMain.h>
 #include "ofxJSON.h"
 
-class Note;
-
-class ofxSongleMelody
+namespace songle
 {
-public:
-    ofxSongleMelody(){}
-    ~ofxSongleMelody(){}
-    
-    void load(const string &url);
-    int getNumNotes();
-    Note &getNote(int index);
-    
-private:
-    vector<Note> mNotes;
-};
+	class Note;
 
-class Note
-{
-public:
-    void setStart(int start);
-    void setDuration(int duration);
-    void setPitch(float pitch);
-    void setNumber(int number);
-    void setIndex(int index);
-    
-private:
-    int mStart;
-    int mDuration;
-    float mPitch;
-    int mNumber;
-    int mIndex;
-};
+	class ofxSongleMelody
+	{
+	public:
+		ofxSongleMelody() {}
+		~ofxSongleMelody() {}
+
+		void load(const string &url);
+		int getNumNotes();
+		Note &getNote(int index);
+
+	private:
+		vector<Note> mNotes;
+	};
+
+	class Note
+	{
+	public:
+		void setStart(int start);
+		void setDuration(int duration);
+		void setPitch(float pitch);
+		void setNumber(int number);
+		void setIndex(int index);
+
+	private:
+		int mStart;
+		int mDuration;
+		float mPitch;
+		int mNumber;
+		int mIndex;
+	};
+}
 
 #endif /* ofxSongleMelody_hpp */

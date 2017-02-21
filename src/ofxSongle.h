@@ -17,28 +17,31 @@
 #include "ofxSongleMelody.hpp"
 #include "ofxSongleChorus.hpp"
 
-class ofxSongle
+namespace songle
 {
-public:
-    ofxSongle();
-    ~ofxSongle();
-    
-    void load(const string &URL);
-    bool isEnable();
-    
-    ofxSongleBasic &getBasic();
-    ofxSongleBeats &getBeat();
-    ofxSongleChord &getChord();
-    ofxSongleMelody &getMelody();
-    ofxSongleChorus &getChorus();
-    
-private:
-    bool mEnable;
-    ofxSongleBasic mBasic;
-    ofxSongleBeats mBeat;
-    ofxSongleChord mChord;
-    ofxSongleMelody mMelody;
-    ofxSongleChorus mChorus;
-};
+	class ofxSongle
+	{
+	public:
+		ofxSongle();
+		~ofxSongle();
+
+		void load(const string &URL);
+		bool isEnable();
+
+		ofxSongleBasic &getBasic();
+		ofxSongleBeats &getBeat();
+		ofxSongleChord &getChord();
+		ofxSongleMelody &getMelody();
+		ofxSongleChorus &getChorus();
+
+	private:
+		bool mEnable;
+		ofxSongleBasic mBasic;
+		ofxSongleBeats mBeat;
+		ofxSongleChord mChord;
+		ofxSongleMelody mMelody;
+		ofxSongleChorus mChorus;
+	};
+}
 
 #endif /* ofxSongle_h */

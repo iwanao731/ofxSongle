@@ -8,6 +8,8 @@
 
 #include "ofxSongleChorus.hpp"
 
+using namespace songle;
+
 void ofxSongleChorus::load(const string &url)
 {
     std::string chorus_url = "https://widget.songle.jp/api/v1/song/chorus.json?url=" + url;

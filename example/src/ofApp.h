@@ -5,6 +5,8 @@
 #include "ofxTimecode.h"
 #include "ofxSongle.h"
 
+using namespace songle;
+
 class ofApp : public ofBaseApp{
     
 public:

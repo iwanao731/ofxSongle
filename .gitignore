@@ -142,6 +142,10 @@ Desktop.ini
 *.vcxproj.filters
 *.example.vcxproj.user
 *.icon.rc
+*.exp
+*.opendb
+*.db
+*.user
 
 #########################
 # dll
@@ -150,3 +154,11 @@ Desktop.ini
 *.exe
 *.lib
 /obj*/
+
+#########################
+# Contents
+#########################
+*.mp4
+*.mov
+*.wmv
+

@@ -1,6 +1,7 @@
 
 #include "ofxSongleBeats.hpp"
 
+using namespace songle;
 
 void ofxSongleBeats::load(const string &url)
 {

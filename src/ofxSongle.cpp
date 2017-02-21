@@ -1,6 +1,8 @@
 
 #include "ofxSongle.h"
 
+using namespace songle;
+
 ofxSongle::ofxSongle()
 	: mEnable(false)
 {
