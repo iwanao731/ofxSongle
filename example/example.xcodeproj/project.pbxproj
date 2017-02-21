@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		037F0C86B1D4D2659BE1E076 /* ofxSongleMelody.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D242C95FC04B81014F798D88 /* ofxSongleMelody.cpp */; };
+		1D7AC8D19D360DFC7AC195E7 /* ofxSongleBeats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B11572C35F38DABA705A8FFE /* ofxSongleBeats.cpp */; };
+		245797D23FABF39B7724E5DF /* ofxSongleBasic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99DC77FED90EB3317F493507 /* ofxSongleBasic.cpp */; };
+		53AC0ED81BD4B5693EC931E8 /* ofxSongleChord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17BAD59BEA33D652218FE6F1 /* ofxSongleChord.cpp */; };
+		6499B8489905BFE9067F8DB8 /* ofxTimecode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9882C87EDC438B97F534F28 /* ofxTimecode.cpp */; };
+		BEDFEE7400C58EA4E412B757 /* ofxJSONElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2B099E6BD1199664C48B177 /* ofxJSONElement.cpp */; };
+		C39569D14256A3DCA433B8E0 /* ofxSongleChorus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C55E9134AFAFAD570F5041F /* ofxSongleChorus.cpp */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+		E58DD3E2C67168177770A11D /* ofxSongle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DAAB050B6F9D0EE7DF80B49 /* ofxSongle.cpp */; };
+		FB84AAF8D1B7A95266DB5C09 /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21BDE665988474F1B1F4D302 /* jsoncpp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1645F56257269CD0356320BD /* ofxJSON.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJSON.h; path = ../../../addons/ofxJSON/src/ofxJSON.h; sourceTree = SOURCE_ROOT; };
+		16528A68BBC62C8BAE788F02 /* ofxSongleBeats.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSongleBeats.hpp; path = ../src/ofxSongleBeats.hpp; sourceTree = SOURCE_ROOT; };
+		17BAD59BEA33D652218FE6F1 /* ofxSongleChord.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSongleChord.cpp; path = ../../../addons/ofxSongle/src/ofxSongleChord.cpp; sourceTree = SOURCE_ROOT; };
+		21BDE665988474F1B1F4D302 /* jsoncpp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = jsoncpp.cpp; path = ../../../addons/ofxJSON/libs/jsoncpp/src/jsoncpp.cpp; sourceTree = SOURCE_ROOT; };
+		26A541233BC6F736E758F718 /* ofxJSONElement.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxJSONElement.h; path = ../../../addons/ofxJSON/src/ofxJSONElement.h; sourceTree = SOURCE_ROOT; };
+		2C7CF000B7B4F782C187C353 /* json.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = json.h; path = ../../../addons/ofxJSON/libs/jsoncpp/include/json/json.h; sourceTree = SOURCE_ROOT; };
+		3AF0F5A134BE8CEA0DC884A5 /* ofxSongleChorus.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSongleChorus.hpp; path = ../../../addons/ofxSongle/src/ofxSongleChorus.hpp; sourceTree = SOURCE_ROOT; };
+		5C55E9134AFAFAD570F5041F /* ofxSongleChorus.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSongleChorus.cpp; path = ../../../addons/ofxSongle/src/ofxSongleChorus.cpp; sourceTree = SOURCE_ROOT; };
+		61313493CDB52744E22A604D /* json-forwards.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "json-forwards.h"; path = "../../../addons/ofxJSON/libs/jsoncpp/include/json/json-forwards.h"; sourceTree = SOURCE_ROOT; };
+		7DAAB050B6F9D0EE7DF80B49 /* ofxSongle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSongle.cpp; path = ../../../addons/ofxSongle/src/ofxSongle.cpp; sourceTree = SOURCE_ROOT; };
+		95C5241B62F5D1F0FE6C067B /* ofxTimecode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxTimecode.h; path = ../../../addons/ofxTimecode/src/ofxTimecode.h; sourceTree = SOURCE_ROOT; };
+		99DC77FED90EB3317F493507 /* ofxSongleBasic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSongleBasic.cpp; path = ../../../addons/ofxSongle/src/ofxSongleBasic.cpp; sourceTree = SOURCE_ROOT; };
+		AD01A26121DAABE2A6B469D0 /* ofxSongleChord.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSongleChord.hpp; path = ../../../addons/ofxSongle/src/ofxSongleChord.hpp; sourceTree = SOURCE_ROOT; };
+		B11572C35F38DABA705A8FFE /* ofxSongleBeats.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSongleBeats.cpp; path = ../../../addons/ofxSongle/src/ofxSongleBeats.cpp; sourceTree = SOURCE_ROOT; };
+		CA612164F3D356FDAA45FB60 /* ofxSongleMelody.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSongleMelody.hpp; path = ../../../addons/ofxSongle/src/ofxSongleMelody.hpp; sourceTree = SOURCE_ROOT; };
+		D242C95FC04B81014F798D88 /* ofxSongleMelody.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSongleMelody.cpp; path = ../../../addons/ofxSongle/src/ofxSongleMelody.cpp; sourceTree = SOURCE_ROOT; };
+		D9882C87EDC438B97F534F28 /* ofxTimecode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxTimecode.cpp; path = ../../../addons/ofxTimecode/src/ofxTimecode.cpp; sourceTree = SOURCE_ROOT; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exampleDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		EC5E225651C556422BEBD9F7 /* ofxSongle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSongle.h; path = ../../../addons/ofxSongle/src/ofxSongle.h; sourceTree = SOURCE_ROOT; };
+		F1756E575DCF77FB073C70D5 /* ofxSongleBasic.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSongleBasic.hpp; path = ../../../addons/ofxSongle/src/ofxSongleBasic.hpp; sourceTree = SOURCE_ROOT; };
+		F2B099E6BD1199664C48B177 /* ofxJSONElement.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxJSONElement.cpp; path = ../../../addons/ofxJSON/src/ofxJSONElement.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2865DAEF86B1907A704CA70B /* ofxJSON */ = {
+			isa = PBXGroup;
+			children = (
+				292AF6148769654D0DF26018 /* src */,
+				F40E80CB2D443CBA9581DD03 /* libs */,
+			);
+			name = ofxJSON;
+			sourceTree = "<group>";
+		};
+		292AF6148769654D0DF26018 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1645F56257269CD0356320BD /* ofxJSON.h */,
+				F2B099E6BD1199664C48B177 /* ofxJSONElement.cpp */,
+				26A541233BC6F736E758F718 /* ofxJSONElement.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		58AD3BD71B781D9BC25763C8 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				61313493CDB52744E22A604D /* json-forwards.h */,
+				2C7CF000B7B4F782C187C353 /* json.h */,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
+		6948EE371B920CB800B5AC1A /* local_addons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = local_addons;
+			sourceTree = "<group>";
+		};
+		6BD9261809906FCBACA365E0 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7DAAB050B6F9D0EE7DF80B49 /* ofxSongle.cpp */,
+				EC5E225651C556422BEBD9F7 /* ofxSongle.h */,
+				99DC77FED90EB3317F493507 /* ofxSongleBasic.cpp */,
+				F1756E575DCF77FB073C70D5 /* ofxSongleBasic.hpp */,
+				B11572C35F38DABA705A8FFE /* ofxSongleBeats.cpp */,
+				16528A68BBC62C8BAE788F02 /* ofxSongleBeats.hpp */,
+				17BAD59BEA33D652218FE6F1 /* ofxSongleChord.cpp */,
+				AD01A26121DAABE2A6B469D0 /* ofxSongleChord.hpp */,
+				5C55E9134AFAFAD570F5041F /* ofxSongleChorus.cpp */,
+				3AF0F5A134BE8CEA0DC884A5 /* ofxSongleChorus.hpp */,
+				D242C95FC04B81014F798D88 /* ofxSongleMelody.cpp */,
+				CA612164F3D356FDAA45FB60 /* ofxSongleMelody.hpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		8EFD6815C031741FFAA1A001 /* ofxTimecode */ = {
+			isa = PBXGroup;
+			children = (
+				ABE37A0BB21B3D890EFC285B /* src */,
+			);
+			name = ofxTimecode;
+			sourceTree = "<group>";
+		};
+		977A836DD2C489CCC5E330FF /* jsoncpp */ = {
+			isa = PBXGroup;
+			children = (
+				D486FC87F063317BB47E9FAC /* include */,
+				CCDC6F9CCF925CC402160B85 /* src */,
+			);
+			name = jsoncpp;
+			sourceTree = "<group>";
+		};
+		ABE37A0BB21B3D890EFC285B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D9882C87EDC438B97F534F28 /* ofxTimecode.cpp */,
+				95C5241B62F5D1F0FE6C067B /* ofxTimecode.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		AD1A99D5C35C64FB5E730742 /* ofxSongle */ = {
+			isa = PBXGroup;
+			children = (
+				6BD9261809906FCBACA365E0 /* src */,
+			);
+			name = ofxSongle;
+			sourceTree = "<group>";
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				2865DAEF86B1907A704CA70B /* ofxJSON */,
+				AD1A99D5C35C64FB5E730742 /* ofxSongle */,
+				8EFD6815C031741FFAA1A001 /* ofxTimecode */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		CCDC6F9CCF925CC402160B85 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				21BDE665988474F1B1F4D302 /* jsoncpp.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		D486FC87F063317BB47E9FAC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				58AD3BD71B781D9BC25763C8 /* json */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				6948EE371B920CB800B5AC1A /* local_addons */,
+				E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		F40E80CB2D443CBA9581DD03 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				977A836DD2C489CCC5E330FF /* jsoncpp */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = example;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy default icon file into App/Resources\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy libfmod and change install directory for fmod to run\nrsync -aved ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\ninstall_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n# Copy GLUT framework (must remove for AppStore submissions)\nrsync -aved ../../../libs/glut/lib/osx/GLUT.framework \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				BEDFEE7400C58EA4E412B757 /* ofxJSONElement.cpp in Sources */,
+				FB84AAF8D1B7A95266DB5C09 /* jsoncpp.cpp in Sources */,
+				E58DD3E2C67168177770A11D /* ofxSongle.cpp in Sources */,
+				245797D23FABF39B7724E5DF /* ofxSongleBasic.cpp in Sources */,
+				1D7AC8D19D360DFC7AC195E7 /* ofxSongleBeats.cpp in Sources */,
+				53AC0ED81BD4B5693EC931E8 /* ofxSongleChord.cpp in Sources */,
+				C39569D14256A3DCA433B8E0 /* ofxSongleChorus.cpp in Sources */,
+				037F0C86B1D4D2659BE1E076 /* ofxSongleMelody.cpp in Sources */,
+				6499B8489905BFE9067F8DB8 /* ofxTimecode.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../../addons/ofxJSON/libs,
+					../../../addons/ofxJSON/libs/jsoncpp,
+					../../../addons/ofxJSON/libs/jsoncpp/include,
+					../../../addons/ofxJSON/libs/jsoncpp/include/json,
+					../../../addons/ofxJSON/libs/jsoncpp/src,
+					../../../addons/ofxJSON/src,
+					../../../addons/ofxSongle/src,
+					../../../addons/ofxTimecode/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../../addons/ofxJSON/libs,
+					../../../addons/ofxJSON/libs/jsoncpp,
+					../../../addons/ofxJSON/libs/jsoncpp/include,
+					../../../addons/ofxJSON/libs/jsoncpp/include/json,
+					../../../addons/ofxJSON/libs/jsoncpp/src,
+					../../../addons/ofxJSON/src,
+					../../../addons/ofxSongle/src,
+					../../../addons/ofxTimecode/src,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../../addons/ofxJSON/libs,
+					../../../addons/ofxJSON/libs/jsoncpp,
+					../../../addons/ofxJSON/libs/jsoncpp/include,
+					../../../addons/ofxJSON/libs/jsoncpp/include/json,
+					../../../addons/ofxJSON/libs/jsoncpp/src,
+					../../../addons/ofxJSON/src,
+					../../../addons/ofxSongle/src,
+					../../../addons/ofxTimecode/src,
+				);
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					src,
+					../../../addons/ofxJSON/libs,
+					../../../addons/ofxJSON/libs/jsoncpp,
+					../../../addons/ofxJSON/libs/jsoncpp/include,
+					../../../addons/ofxJSON/libs/jsoncpp/include/json,
+					../../../addons/ofxJSON/libs/jsoncpp/src,
+					../../../addons/ofxJSON/src,
+					../../../addons/ofxSongle/src,
+					../../../addons/ofxTimecode/src,
+				);
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}
