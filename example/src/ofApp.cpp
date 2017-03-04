@@ -14,13 +14,14 @@ void ofApp::setup(){
     std::string youtube_url = "www.youtube.com/watch?v=243vPl8HdVk";
     songle.load(youtube_url);
 
-	scale = ofGetWidth() / songle.getBasic().getDuration() * 1000;
+    scale = ofGetWidth() / songle.getBasic().getDuration() * 1000;
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
 	
-	currentTime += ofGetLastFrameTime();
+    currentTime = video.getDuration() * (float)video.getCurrentFrame() / (float)video.getTotalNumFrames();
+
     video.update();
 }
 
@@ -69,7 +70,10 @@ void ofApp::draw() {
     ofDrawLine(currentTime * scale, ofGetHeight(), currentTime * scale, 0);
     
     // chorus
-	songle.getChorus().draw(ofPoint(0,ofGetHeight()-100), ofGetWidth(), 40, songle.getBasic().getDuration());
+    songle.getChorus().draw(ofPoint(0,ofGetHeight()-100), ofGetWidth(), 40, songle.getBasic().getDuration());
+
+    ofPoint pos(0,ofGetHeight()-100);
+	songle.getChorus().draw(pos, ofGetWidth(), 40, songle.getBasic().getDuration());
     
     float nextTime = (float)songle.getBeat().getBeat(countNumberOfBeat).getStart() / 1000.f;
     
@@ -84,6 +88,8 @@ void ofApp::keyPressed(int key){
     switch (key) {
         case 'f':
             ofToggleFullscreen();
+            break;
+        default:
             break;
     }
 }
