@@ -78,6 +78,48 @@ void ofxSongleChorus::load(const string &url)
     }
 }
 
+void ofxSongleChorus::draw(ofPoint &p, float width, float height, float allDuration, float currentTime, float speed)
+{
+	ofSetLineWidth(2.0);
+
+	ofFill();
+	float scale = width / allDuration;
+	float eachHeight = height / this->getNumRepeatSegments();
+
+	for (int k = 0; k < 2; k++)
+	{
+		if (k == 0)
+			ofFill();
+		else
+			ofNoFill();
+
+		for (int i = 0; i < this->getNumRepeatSegments(); i++)
+		{
+			int numRepeats = this->getRepeatSegment(i).getNumRepeats();
+			for (int j = 0; j < numRepeats; j++)
+			{
+				float start = (float) this->getRepeatSegment(i).getRepeat(j).getStart() * scale;
+				float duration = (float) this->getRepeatSegment(i).getRepeat(j).getDuration() * scale;
+
+				if (this->getRepeatSegment(i).getIsChorus()) {
+					ofSetColor(255, 140, 0);
+				}
+				else if(k!=1){
+					ofSetColor(30, 30, 255);
+				}else{
+					ofSetColor(0);
+				}
+				ofDrawRectangle(ofPoint(p.x + start, p.y + eachHeight * i), duration, eachHeight);
+			}
+		}
+	}
+
+	ofSetColor(255, 0, 0);
+	float x = currentTime * 1000.f * scale * speed;
+	ofDrawLine(p.x + x, p.y, p.x + x, p.y + height);
+	ofSetColor(255);
+}
+
 int ofxSongleChorus::getNumChorusSegments()
 {
     return mChorusSegments.size();

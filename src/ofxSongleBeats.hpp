@@ -18,6 +18,8 @@ namespace songle
 		int getNumBeats();
 		int getNumBar();
 		int getBeatPosition(float currentFloatTime);
+		int getBeatStart(float currentFloatTime);
+		int getBeatIndex(float currentFloatTime);
 		int calcBPM(float currentFloatTime);
 		Beat &getBeat(int index);
 		Bar &getBar(int index);

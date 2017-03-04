@@ -29,7 +29,8 @@ public:
     ofxTimecode mTimecode;
     float currentTime;
     int countNumberOfBeat;
-    
+	float scale;
+
     ofVideoPlayer video;
     
     ofxSongle songle;

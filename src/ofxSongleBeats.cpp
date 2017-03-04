@@ -73,8 +73,47 @@ int ofxSongleBeats::getBeatPosition(float currentFloatTime)
     }
 }
 
+int ofxSongleBeats::getBeatStart(float currentFloatTime)
+{
+	int i = 0;
+	int currentIntTime = currentFloatTime * 1000.f;
+	while (currentIntTime >= this->getBeat(i).getStart())
+	{
+		i++;
+	}
+
+	int value = i - 1;
+	if (value == -1)
+		return 0;
+	else {
+		return this->getBeat(value).getStart();
+	}
+}
+
+int ofxSongleBeats::getBeatIndex(float currentFloatTime)
+{
+	int i = 0;
+	int currentIntTime = currentFloatTime * 1000.f;
+	while (currentIntTime >= this->getBeat(i).getStart())
+	{
+		i++;
+	}
+
+	int value = i - 1;
+	if (value == -1)
+		return 0;
+	else {
+		return value;
+	}
+}
+
 Beat &ofxSongleBeats::getBeat(int index)
 {
+	if (index < 0)
+		ofLogError("ofxSongleBeats::getBeat : index < 0");
+	else if(mBeats.size() < index)
+		ofLogError("ofxSongleBeats::getBeat : oversize");
+
     return mBeats[index];
 }
 

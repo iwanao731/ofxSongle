@@ -25,6 +25,8 @@ namespace songle
 
 		void load(const string &url);
 
+		void draw(ofPoint &p, float width, float height, float allDuration, float currentTime = 0, float speed = 1.0f);
+
 		Segment &getChorusSegment(int index);
 		Segment &getRepeatSegment(int index);
 
