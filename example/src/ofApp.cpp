@@ -13,11 +13,14 @@ void ofApp::setup(){
     
     std::string youtube_url = "www.youtube.com/watch?v=243vPl8HdVk";
     songle.load(youtube_url);
+
+	scale = ofGetWidth() / songle.getBasic().getDuration() * 1000;
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    currentTime += ofGetLastFrameTime();
+	
+	currentTime += ofGetLastFrameTime();
     video.update();
 }
 
@@ -63,25 +66,10 @@ void ofApp::draw() {
     ofDrawBitmapString("chord : " + chord, 20, 80);
     
     ofSetColor(255, 0, 0);
-    ofDrawLine(currentTime*3, ofGetHeight(), currentTime*3, 0);
+    ofDrawLine(currentTime * scale, ofGetHeight(), currentTime * scale, 0);
     
     // chorus
-    for (int i = 0; i < songle.getChorus().getNumRepeatSegments(); i++)
-    {
-        int numRepeats = songle.getChorus().getRepeatSegment(i).getNumRepeats();
-        for(int j=0; j<numRepeats; j++)
-        {
-            float start = (float)songle.getChorus().getRepeatSegment(i).getRepeat(j).getStart() / 333.f;
-            float duration = (float)songle.getChorus().getRepeatSegment(i).getRepeat(j).getDuration() / 333.f;
-            
-            if(songle.getChorus().getRepeatSegment(i).getIsChorus()){
-                ofSetColor(255, 140, 0);
-            }else{
-                ofSetColor(30,30,255);
-            }
-            ofDrawRectangle(ofPoint(start, (ofGetHeight()-100)+10*(i+1)), duration, 10);
-        }
-    }
+	songle.getChorus().draw(ofPoint(0,ofGetHeight()-100), ofGetWidth(), 40, songle.getBasic().getDuration());
     
     float nextTime = (float)songle.getBeat().getBeat(countNumberOfBeat).getStart() / 1000.f;
     
