@@ -26,6 +26,7 @@ namespace songle
 		~ofxSongle();
 
 		void load(const string &URL);
+		void save(const string filename);
 		bool isEnable();
 
 		ofxSongleBasic &getBasic();

@@ -80,6 +80,8 @@ void ofxSongleChorus::load(const string &url)
 
 void ofxSongleChorus::draw(ofPoint &p, float width, float height, float allDuration, float currentTime, float speed)
 {
+	ofPushMatrix();
+
 	ofSetLineWidth(2.0);
 
 	ofFill();
@@ -118,6 +120,8 @@ void ofxSongleChorus::draw(ofPoint &p, float width, float height, float allDurat
 	float x = currentTime * 1000.f * scale * speed;
 	ofDrawLine(p.x + x, p.y, p.x + x, p.y + height);
 	ofSetColor(255);
+
+	ofPopMatrix();
 }
 
 int ofxSongleChorus::getNumChorusSegments()

@@ -107,6 +107,34 @@ int ofxSongleBeats::getBeatIndex(float currentFloatTime)
 	}
 }
 
+int ofxSongleBeats::getBarPosition(const float currentFloatTime)
+{
+	int i = 0;
+	int currentIntTime = currentFloatTime * 1000.f;
+	while (currentIntTime >= this->getBar(i).getStart())
+	{
+		i++;
+	}
+	int value = i - 1;
+	if (value == -1)
+		return 0;
+	else {
+		return value;
+	}
+}
+
+int ofxSongleBeats::getBarStart(const float currentFloatTime)
+{
+	int index = this->getBarPosition(currentFloatTime);
+	return this->getBar(index).getStart();
+}
+
+int ofxSongleBeats::getBarIndex(const float currentFloatTime)
+{
+	int index = this->getBarPosition(currentFloatTime);
+	return this->getBar(index).getIndex();
+}
+
 Beat &ofxSongleBeats::getBeat(int index)
 {
 	if (index < 0)

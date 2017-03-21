@@ -24,6 +24,11 @@ void ofxSongle::load(const string &URL)
     mEnable = true;
 }
 
+void ofxSongle::save(const string filename)
+{
+	// TBD
+}
+
 bool ofxSongle::isEnable()
 {
 	return mEnable;
