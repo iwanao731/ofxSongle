@@ -25,7 +25,8 @@ namespace songle
 		ofxSongle();
 		~ofxSongle();
 
-		void load(const string &URL);
+		void load(const string& URL);
+		void loadBeat(const string& filename);
 		void save(const string filename);
 		bool isEnable();
 

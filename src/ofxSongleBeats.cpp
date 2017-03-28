@@ -46,6 +46,47 @@ void ofxSongleBeats::load(const string &url)
     }   
 }
 
+void ofxSongleBeats::loadFile(const string &filename)
+{
+	ofxJSONElement data;
+
+	if (!data.open(filename))
+	{
+		ofLogNotice("ofxSongleBeats::load") << "Failed to parse JSON";
+	}
+
+	// Beats
+	mBeats.resize(data["beats"].size());
+
+	for (int i = 0; i<this->getNumBeats(); i++)
+	{
+		mBeats[i].setIndex(data["beats"][i]["index"].asInt());
+		mBeats[i].setStart(data["beats"][i]["start"].asInt());
+		mBeats[i].setPosition(data["beats"][i]["position"].asInt());
+	}
+
+	// Bars
+	mBars.resize(data["bars"].size());
+
+	for (int i = 0; i<this->getNumBar(); i++)
+	{
+		// start
+		mBars[i].setStart(data["bars"][i]["start"].asInt());
+
+		// beats
+		mBars[i].setNumBeats(data["bars"][i]["beats"].size());
+
+		for (int j = 0; j<mBars[i].getNumBeats(); j++)
+		{
+			mBars[i].getBeat(j).setIndex(data["bars"][i]["beats"][j]["index"].asInt());
+			mBars[i].getBeat(j).setStart(data["bars"][i]["beats"][j]["start"].asInt());
+			mBars[i].getBeat(j).setPosition(data["bars"][i]["beats"][j]["position"].asInt());
+		}
+
+		mBars[i].setIndex(data["bars"][i]["index"].asInt());
+	}
+}
+
 int ofxSongleBeats::getNumBeats()
 {
     return mBeats.size();
@@ -85,6 +126,8 @@ int ofxSongleBeats::getBeatStart(float currentFloatTime)
 	int value = i - 1;
 	if (value == -1)
 		return 0;
+	else if (value > this->getNumBeats())
+		return this->getBeat(this->getNumBeats()-1).getStart();
 	else {
 		return this->getBeat(value).getStart();
 	}
@@ -100,7 +143,7 @@ int ofxSongleBeats::getBeatIndex(float currentFloatTime)
 	}
 
 	int value = i - 1;
-	if (value == -1)
+	if (value <= -1)
 		return 0;
 	else {
 		return value;
@@ -137,8 +180,9 @@ int ofxSongleBeats::getBarIndex(const float currentFloatTime)
 
 Beat &ofxSongleBeats::getBeat(int index)
 {
-	if (index < 0)
-		ofLogError("ofxSongleBeats::getBeat : index < 0");
+	if (index < 0) {
+		//ofLogError("ofxSongleBeats::getBeat : index < 0");
+	}
 	else if(mBeats.size() < index)
 		ofLogError("ofxSongleBeats::getBeat : oversize");
 
@@ -162,6 +206,12 @@ int ofxSongleBeats::calcBPM(float currentFloatTime)
     float duration = (this->getBeat(i).getStart() - this->getBeat(i-1).getStart()) / 1000.f;
     int bpm = 60.0f / duration;
     return bpm;
+}
+
+void ofxSongleBeats::clear()
+{
+	mBeats.clear();
+	mBars.clear();
 }
 
 // Beat

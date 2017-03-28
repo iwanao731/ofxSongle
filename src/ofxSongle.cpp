@@ -14,7 +14,7 @@ ofxSongle::~ofxSongle()
 
 }
 
-void ofxSongle::load(const string &URL)
+void ofxSongle::load(const string& URL)
 {
     mBasic.load(URL);
     mBeat.load(URL);
@@ -22,6 +22,11 @@ void ofxSongle::load(const string &URL)
     mMelody.load(URL);
     mChorus.load(URL);
     mEnable = true;
+}
+
+void ofxSongle::loadBeat(const string& filename)
+{
+	mBeat.loadFile(filename);
 }
 
 void ofxSongle::save(const string filename)

@@ -15,6 +15,7 @@ namespace songle
 		~ofxSongleBeats() {}
 
 		void load(const string &url);
+		void loadFile(const string &filename);
 		int getNumBeats();
 		int getNumBar();
 		int getBeatPosition(float currentFloatTime);
@@ -26,6 +27,7 @@ namespace songle
 		int calcBPM(float currentFloatTime);
 		Beat &getBeat(int index);
 		Bar &getBar(int index);
+		void clear();
 
 	private:
 		std::vector<Beat> mBeats;
